@@ -1,50 +1,157 @@
-.{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin: 0;
+
+body {
     min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #111827;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    width: 100%;
+}
+
+header nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav > a:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111827;
+}
+
+header nav div {
+    display: flex;
+    gap: 30px;
+}
+
+header nav div a {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+header nav div a:hover {
+    color: #111827;
+}
+
+header nav > a:last-child {
+    padding: 11px 20px;
+    background-color: #111827;
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+main {
+    min-height: 70vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f2f4f7;
 
-}
-.profile-card{
-    width: 350px;
-    padding:30px;
-    background-color: #fff;
-    border-radius:20px;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-.profile-card img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.profile-card h1{
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    color: #666;
-
 }
 
-.profile-card p{
-    margin: 20px 0;line-height: 1.5;
-    color: #555;
-
-
+#hero {
+    max-width: 750px;
+    padding: 40px 20px;
 }
-.profile-card button{
-    padding: 12px 24px;
+
+#hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+#hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+#hero button {
+    padding: 13px 24px;
     border: none;
-    border-radius:20px;
-    background-color: #111;
-    color: #fff;
-    cursor: pointer;
+    border-radius: 8px;
 
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#hero button:first-of-type {
+    background-color: #111827;
+    color: white;
+}
+
+#hero button:last-of-type {
+    margin-left: 10px;
+    background-color: white;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+#hero button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER / FEATURES
+========================= */
+
+footer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    min-height: 150px;
+}
+a{
+    text-decoration: none;
 }
